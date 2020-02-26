@@ -1,5 +1,5 @@
 {
-  "name": "vue-loader",
+  "name": "@nivinjoseph/vue-loader",
   "version": "15.9.0",
   "description": "Vue single-file component loader for Webpack",
   "main": "lib/index.js",
@@ -11,7 +11,8 @@
     "dev": "webpack-dev-server --config example/webpack.config.js --inline --hot",
     "docs": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "prepublishOnly": "conventional-changelog -p angular -r 2 -i CHANGELOG.md -s"
+    "prepublishOnly": "conventional-changelog -p angular -r 2 -i CHANGELOG.md -s",
+    "publish-package": "npm publish --access=public"
   },
   "author": "Evan You",
   "license": "MIT",
@@ -21,10 +22,7 @@
   "homepage": "https://github.com/vuejs/vue-loader",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vuejs/vue-loader.git"
-  },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
+    "url": "https://github.com/nivinjoseph/vue-loader.git"
   },
   "lint-staged": {
     "lib/**/*.js": [
